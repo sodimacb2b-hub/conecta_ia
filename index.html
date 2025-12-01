@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConectaIA — Domina la IA.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  
+  <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="mobile-menu" class="mobile-menu">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="noticias.html">NOTICIAS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <div class="sticky-header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo-small" />
+      </div>
+
+      <nav class="sticky-nav">
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <header class="hero">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo" />
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+
+      <h1>ConectaIA — Domina la IA. Transforma tu rutina.</h1>
+      <p>
+        Aprende a usar la inteligencia artificial en tu día a día, sin tecnicismos ni complicaciones.
+        Charlas prácticas y cursos online de 2 horas para profesionales, emprendedores y curiosos del futuro.
+      </p>
+      <div class="hero-buttons">
+        <a href="#calendario" class="btn btn-primary">Reserva tu próxima charla</a>
+        <a href="#beneficios" class="btn btn-secondary">Ver próximos cursos</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="video-hero-cta">
+    <video class="video-background" autoplay loop muted playsinline poster="video-placeholder.jpg">
+        <source src="ia_background.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    
+    <div class="video-content-overlay container">
+        <h2>La Inteligencia Artificial No Es el Futuro, <br>Es el Presente.</h2>
+        <p>No te quedes atrás. Domina las herramientas que están redefiniendo cada industria y transforma tu productividad diaria.</p>
+        <a href="servicios.html" class="btn btn-primary btn-large">¡Empieza a Conectar con la IA Hoy!</a>
+    </div>
+</section>
+
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <h2>Descubre cómo la IA puede mejorar tu vida</h2>
+      <p>
+        En ConectaIA te mostramos cómo aplicar herramientas de inteligencia artificial para ser más productivo, creativo y eficiente.
+        No necesitas experiencia técnica: solo curiosidad y ganas de aprender.
+      </p>
+
+      <div class="benefit-cards">
+        <div class="card">
+          <h3>🧩 Aprendizaje práctico</h3>
+          <p>Casos reales y demostraciones en vivo.</p>
+        </div>
+        <div class="card">
+          <h3>⚙️ IA al alcance de todos</h3>
+          <p>Desde ChatGPT hasta herramientas de productividad y negocio.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Resultados inmediatos</h3>
+          <p>Aplica lo aprendido desde la primera sesión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendario" class="calendar">
+    <div class="container">
+      <h2>Próximas sesiones en vivo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Tema</th>
+            <th>Modalidad</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12 de noviembre</td>
+            <td>Domina ChatGPT para el trabajo diario</td>
+            <td>Online (Zoom)</td>
+            <td>$12.000 CLP</td>
+          </tr>
+          <tr>
+            <td>20 de noviembre</td>
+            <td>Herramientas IA para emprendedores</td>
+            <td>Online (Meet)</td>
+            <td>$15.000 CLP</td>
+          </tr>
+          <tr>
+            <td>28 de noviembre</td>
+            <td>Automatiza tareas con IA</td>
+            <td>Online (Zoom)</td>
+            <td>$12.000 CLP</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#contacto" class="btn btn-primary">Reserva tu cupo ahora</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Lo que dicen nuestros participantes</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          “Nunca imaginé que podía usar IA para mi trabajo diario. En 2 horas aprendí a crear contenido y automatizar tareas.”
+          <strong>— María P., diseñadora</strong>
+        </div>
+        <div class="testimonial">
+          “Excelente formato, muy claro y práctico. Ahora entiendo cómo la IA puede ayudarme con mis clientes.”
+          <strong>— Rodrigo T., emprendedor</strong>
+        </div>
+        <div class="testimonial">
+          “Fácil de seguir y súper útil. Recomendado 100%.”
+          <strong>— Carla M., estudiante universitaria</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ia-carousel-section section-padding">
+    <div class="container">
+        <h2 class="section-title text-center">IA en Acción: Inspiración Visual</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-item active">
+                    <img src="placeholder_ia_1.jpg" alt="Imagen de inteligencia artificial: Redes neuronales." loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="placeholder_ia_2.jpg" alt="Imagen de inteligencia artificial: Analítica de datos." loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="placeholder_ia_3.jpg" alt="Imagen de inteligencia artificial: Algoritmos de aprendizaje." loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="placeholder_ia_4.jpg" alt="Imagen de inteligencia artificial: Creatividad con IA." loading="lazy">
+                </div>
+            </div>
+            
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide-index="0" aria-label="Ir a la imagen 1"></span>
+                <span class="indicator" data-slide-index="1" aria-label="Ir a la imagen 2"></span>
+                <span class="indicator" data-slide-index="2" aria-label="Ir a la imagen 3"></span>
+                <span class="indicator" data-slide-index="3" aria-label="Ir a la imagen 4"></span>
+            </div>
+
+            <button class="carousel-nav prev" aria-label="Imagen anterior">&#10094;</button>
+            <button class="carousel-nav next" aria-label="Imagen siguiente">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+  <section class="faq-section section-padding">
+    <div class="container">
+        <h2 class="section-title text-center">Preguntas Frecuentes sobre IA</h2>
+
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" aria-expanded="false" aria-controls="faq-content-1">
+                    <h3>¿Necesito saber programar para tomar sus cursos?</h3>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content" id="faq-content-1" aria-hidden="true">
+                    <p>Absolutamente no. Nuestros cursos están diseñados para ser **100% prácticos y accesibles**. Nos enfocamos en el uso de herramientas de IA sin requerir conocimientos de código. Si sabes usar un navegador web, puedes dominar la IA con nosotros.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" aria-expanded="false" aria-controls="faq-content-2">
+                    <h3>¿Las sesiones son grabadas o en vivo?</h3>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content" id="faq-content-2" aria-hidden="true">
+                    <p>Ofrecemos una mezcla. La mayoría de nuestras charlas y cursos son sesiones **EN VIVO** a través de Zoom o Meet, lo que permite la interacción directa y preguntas en tiempo real. Sin embargo, los participantes reciben acceso a la grabación por un tiempo limitado para repaso.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" aria-expanded="false" aria-controls="faq-content-3">
+                    <h3>¿Qué diferencia a ConectaIA de otros cursos online?</h3>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content" id="faq-content-3" aria-hidden="true">
+                    <p>Nuestro enfoque es la **productividad inmediata**. No enseñamos teoría abstracta, sino trucos, técnicas y flujos de trabajo específicos para que apliques la IA en tu rutina o negocio desde el día uno. Nuestro fundador es un experto en Productividad con IA.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" aria-expanded="false" aria-controls="faq-content-4">
+                    <h3>¿Ofrecen planes para empresas?</h3>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content" id="faq-content-4" aria-hidden="true">
+                    <p>Sí, contamos con el servicio de **Consultoría Empresarial**. Creamos talleres y charlas a medida para equipos específicos (ventas, marketing, soporte, etc.), optimizando sus procesos con soluciones de IA personalizadas. Puedes contactarnos para una propuesta.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" aria-expanded="false" aria-controls="faq-content-5">
+                    <h3>¿Cuál es el software o herramienta de IA que enseñan?</h3>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content" id="faq-content-5" aria-hidden="true">
+                    <p>Nos enfocamos en las herramientas líderes del mercado como Gemini, ChatGPT, Midjourney, y otras herramientas especializadas en automatización y productividad. El software exacto varía según el curso, pero siempre son herramientas accesibles y de alto impacto.</p>
+                </div>
+            </div>
+
+        </div> 
+      </div> 
+      </section>
+      
+
+  <footer id="contacto" class="footer">
+    <div class="container">
+        <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+        <a href="#" class="btn btn-primary open-modal-btn">Abrir Formulario de Contacto</a> 
+
+        <p class="footer-copy">
+            ConectaIA © 2026 — Todos los derechos reservados  
+            📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+        </p>
+    </div>
+</footer>
+
+ <!--  <footer id="contacto" class="footer">
+    <div class="container">
+      <h2>Conecta con nosotros</h2>
+      <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+
+      <p class="footer-copy">
+        ConectaIA © 2025 — Todos los derechos reservados  
+        📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+      </p>
+    </div>
+  </footer> -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal-btn">&times;</button>
+
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="modal-logo" />
+        
+        <h2>Conecta con nosotros</h2>
+        <p>Déjanos tu mensaje y te responderemos a la brevedad.</p>
+        
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+
+    </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Elementos de Navegación Existentes
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const stickyHeader = document.querySelector('.sticky-header'); 
+      const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn'); 
+      const breakpoint = 768; 
+
+      // NUEVOS Elementos del Modal
+      const contactModal = document.getElementById('contact-modal');
+      const openModalButtons = document.querySelectorAll('a[href="#contacto"], .open-modal-btn'); // Selecciona todos los enlaces 'CONTACTO' y el botón en el footer
+      const closeModalBtn = contactModal.querySelector('.close-modal-btn');
+
+      // Función de Apertura
+      function openModal(e) {
+          e.preventDefault(); // Evita que el navegador salte a #contacto
+          contactModal.classList.add('visible');
+      }
+
+      // Función de Cierre
+      function closeModal() {
+          contactModal.classList.remove('visible');
+      }
+
+      // -----------------------------------------------------------
+      // 1. MANEJO DEL MODAL
+      // -----------------------------------------------------------
+      
+      // Abrir al hacer clic en cualquier enlace de contacto
+      openModalButtons.forEach(button => {
+          button.addEventListener('click', openModal);
+      });
+
+      // Cerrar al hacer clic en el botón X
+      closeModalBtn.addEventListener('click', closeModal);
+      
+      // Cerrar al hacer clic en el fondo oscuro
+      contactModal.addEventListener('click', (e) => {
+          if (e.target.classList.contains('modal-overlay')) {
+              closeModal();
+          }
+      });
+      
+      // Cerrar con tecla ESC
+      document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && contactModal.classList.contains('visible')) {
+              closeModal();
+          }
+      });
+
+      // -----------------------------------------------------------
+      // 2. LÓGICA DE NAVEGACIÓN Y SCROLL (EXISTENTE)
+      // -----------------------------------------------------------
+      
+      // Lógica del Menú de Navegación (sin cambios)
+      function toggleMenu() {
+          const isExpanded = mobileMenu.classList.contains('open');
+          mobileMenu.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+
+      const menuLinks = mobileMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              if (mobileMenu.classList.contains('open')) {
+                  toggleMenu();
+              }
+          });
+      });
+      
+      window.addEventListener('resize', () => {
+         if (window.innerWidth > breakpoint && mobileMenu.classList.contains('open')) {
+             mobileMenu.classList.remove('open');
+             menuToggle.setAttribute('aria-expanded', 'false');
+         }
+      });
+      
+      // Lógica del Sticky Header y Scroll to Top
+      if (stickyHeader && heroSection) {
+          const stickyOffset = heroSection.offsetHeight * 0.5;
+
+          function handleScroll() {
+              // Lógica del Sticky Header
+              if (window.scrollY > stickyOffset) {
+                  stickyHeader.classList.add('sticky');
+              } else {
+                  stickyHeader.classList.remove('sticky');
+              }
+
+              // Lógica para mostrar/ocultar el botón Scroll to Top
+              if (window.scrollY > 300) { 
+                  scrollToTopBtn.classList.add('show');
+                  scrollToTopBtn.style.display = 'block';
+              } else {
+                  scrollToTopBtn.classList.remove('show');
+                  setTimeout(() => {
+                      if (!scrollToTopBtn.classList.contains('show')) {
+                          scrollToTopBtn.style.display = 'none';
+                      }
+                  }, 300); 
+              }
+          }
+          window.addEventListener('scroll', handleScroll);
+          handleScroll();
+      }
+      
+      // Desplazamiento suave al inicio
+      if (scrollToTopBtn) {
+          scrollToTopBtn.addEventListener('click', function() {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth' 
+              });
+          });
+      }
+  });
+
+  // -----------------------------------------------------------
+// NUEVO: Lógica para el Accordion de FAQ
+// -----------------------------------------------------------
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        // Encuentra el contenedor del contenido de la respuesta
+        const content = header.nextElementSibling;
+        
+        // Cierra los demás acordeones abiertos
+        accordionHeaders.forEach(otherHeader => {
+            if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                otherHeader.classList.remove('active');
+                const otherContent = otherHeader.nextElementSibling;
+                otherContent.classList.remove('open');
+                otherContent.setAttribute('aria-hidden', 'true');
+                otherHeader.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Abre/Cierra el acordeón actual
+        const isExpanded = header.classList.toggle('active');
+        content.classList.toggle('open');
+        
+        // Actualiza atributos ARIA para accesibilidad
+        header.setAttribute('aria-expanded', isExpanded);
+        content.setAttribute('aria-hidden', !isExpanded);
+    });
+});
+// -----------------------------------------------------------
+// NUEVO: Lógica para el Carrusel de Imágenes (Autoplay 5s)
+// -----------------------------------------------------------
+const carousel = document.querySelector('.carousel-slide');
+const items = document.querySelectorAll('.carousel-item');
+const indicators = document.querySelectorAll('.indicator');
+const prevBtn = document.querySelector('.carousel-nav.prev');
+const nextBtn = document.querySelector('.carousel-nav.next');
+const totalItems = items.length;
+let currentIndex = 0;
+let autoSlideInterval;
+
+function updateCarousel() {
+    // Calcula el desplazamiento (4 imágenes = 25% por slide)
+    const offset = currentIndex * (100 / totalItems); 
+    carousel.style.transform = `translateX(-${offset}%)`;
+
+    // Actualiza los indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentIndex);
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+}
+
+function startAutoSlide() {
+    // 5000ms = 5 segundos
+    autoSlideInterval = setInterval(nextSlide, 5000); 
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+// Event Listeners para navegación
+if (prevBtn && nextBtn) { // Comprueba que los elementos existan antes de agregar listeners
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoSlide();
+    });
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+    });
+}
+
+// Event Listeners para los indicadores (dots)
+indicators.forEach(indicator => {
+    indicator.addEventListener('click', (e) => {
+        const index = parseInt(e.target.dataset.slideIndex);
+        if (index !== currentIndex) {
+            currentIndex = index;
+            updateCarousel();
+            resetAutoSlide();
+        }
+    });
+});
+
+// Iniciar el carrusel automáticamente al cargar
+updateCarousel();
+startAutoSlide();
+
+</script>
+
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Ir al inicio de la página">
+    &uarr;
+  </button>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias y Blog — ConectaIA</title>
+  <link rel="stylesheet" href="styles.css" /> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  
+  <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="mobile-menu" class="mobile-menu">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="noticias.html" class="active">NOTICIAS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <div class="sticky-header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo-small" />
+      </div>
+
+      <nav class="sticky-nav">
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="noticias.html" class="active">NOTICIAS</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <header class="page-header">
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo" />
+        </div>
+        
+        <nav class="main-nav">
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="noticias.html" class="active">NOTICIAS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+      
+      <h1>Últimas Noticias y Tendencias en IA</h1>
+      <p>
+        Mantente al día con las herramientas, avances y regulaciones más importantes del mundo de la Inteligencia Artificial.
+      </p>
+    </div>
+  </header>
+
+  <section class="testimonials"> <div class="container">
+      <h2>Artículos destacados</h2>
+      
+      <div class="testimonials-grid blog-grid">
+        
+        <div class="testimonial card">
+          <h3 style="color: var(--blue); margin-top: 0;">Cómo usar Gemini para investigar</h3>
+          <p>Descubre las funciones avanzadas del nuevo modelo de Google para optimizar tus informes y análisis de mercado.</p>
+          <small style="color: #666; display: block; margin-bottom: 10px;">Publicado el 25 de Octubre</small>
+          <a href="#" class="btn btn-primary" style="padding: 8px 15px; font-size: 0.9rem;">Leer más</a>
+        </div>
+        
+        <div class="testimonial card">
+          <h3 style="color: var(--blue); margin-top: 0;">IA y Emprendimiento 2025</h3>
+          <p>Las 5 herramientas de Inteligencia Artificial que todo emprendedor debe dominar para escalar su negocio el próximo año.</p>
+          <small style="color: #666; display: block; margin-bottom: 10px;">Publicado el 18 de Octubre</small>
+          <a href="#" class="btn btn-primary" style="padding: 8px 15px; font-size: 0.9rem;">Leer más</a>
+        </div>
+        
+        <div class="testimonial card">
+          <h3 style="color: var(--blue); margin-top: 0;">Automatización sin código</h3>
+          <p>Guía paso a paso para automatizar tareas repetitivas en tu trabajo usando herramientas de IA sin escribir una sola línea de código.</p>
+          <small style="color: #666; display: block; margin-bottom: 10px;">Publicado el 10 de Octubre</small>
+          <a href="#" class="btn btn-primary" style="padding: 8px 15px; font-size: 0.9rem;">Leer más</a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  <footer id="contacto" class="footer">
+    <div class="container">
+        <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+        <a href="#" class="btn btn-primary open-modal-btn">Abrir Formulario de Contacto</a> 
+
+        <p class="footer-copy">
+            ConectaIA © 2026 — Todos los derechos reservados  
+            📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+        </p>
+    </div>
+</footer>
+
+ <!--  <footer id="contacto" class="footer">
+    <div class="container">
+      <h2>Conecta con nosotros</h2>
+      <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+
+      <p class="footer-copy">
+        ConectaIA © 2025 — Todos los derechos reservados  
+        📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+      </p>
+    </div>
+  </footer> -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal-btn">&times;</button>
+        
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="modal-logo" />
+
+        <h2>Conecta con nosotros</h2>
+        <p>Déjanos tu mensaje y te responderemos a la brevedad.</p>
+        
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+
+    </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Elementos de Navegación Existentes
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const stickyHeader = document.querySelector('.sticky-header'); 
+      const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn'); 
+      const breakpoint = 768; 
+
+      // NUEVOS Elementos del Modal
+      const contactModal = document.getElementById('contact-modal');
+      const openModalButtons = document.querySelectorAll('a[href="#contacto"], .open-modal-btn'); // Selecciona todos los enlaces 'CONTACTO' y el botón en el footer
+      const closeModalBtn = contactModal.querySelector('.close-modal-btn');
+
+      // Función de Apertura
+      function openModal(e) {
+          e.preventDefault(); // Evita que el navegador salte a #contacto
+          contactModal.classList.add('visible');
+      }
+
+      // Función de Cierre
+      function closeModal() {
+          contactModal.classList.remove('visible');
+      }
+
+      // -----------------------------------------------------------
+      // 1. MANEJO DEL MODAL
+      // -----------------------------------------------------------
+      
+      // Abrir al hacer clic en cualquier enlace de contacto
+      openModalButtons.forEach(button => {
+          button.addEventListener('click', openModal);
+      });
+
+      // Cerrar al hacer clic en el botón X
+      closeModalBtn.addEventListener('click', closeModal);
+      
+      // Cerrar al hacer clic en el fondo oscuro
+      contactModal.addEventListener('click', (e) => {
+          if (e.target.classList.contains('modal-overlay')) {
+              closeModal();
+          }
+      });
+      
+      // Cerrar con tecla ESC
+      document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && contactModal.classList.contains('visible')) {
+              closeModal();
+          }
+      });
+
+      // -----------------------------------------------------------
+      // 2. LÓGICA DE NAVEGACIÓN Y SCROLL (EXISTENTE)
+      // -----------------------------------------------------------
+      
+      // Lógica del Menú de Navegación (sin cambios)
+      function toggleMenu() {
+          const isExpanded = mobileMenu.classList.contains('open');
+          mobileMenu.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+
+      const menuLinks = mobileMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              if (mobileMenu.classList.contains('open')) {
+                  toggleMenu();
+              }
+          });
+      });
+      
+      window.addEventListener('resize', () => {
+         if (window.innerWidth > breakpoint && mobileMenu.classList.contains('open')) {
+             mobileMenu.classList.remove('open');
+             menuToggle.setAttribute('aria-expanded', 'false');
+         }
+      });
+      
+      // Lógica del Sticky Header y Scroll to Top
+      if (stickyHeader && heroSection) {
+          const stickyOffset = heroSection.offsetHeight * 0.5;
+
+          function handleScroll() {
+              // Lógica del Sticky Header
+              if (window.scrollY > stickyOffset) {
+                  stickyHeader.classList.add('sticky');
+              } else {
+                  stickyHeader.classList.remove('sticky');
+              }
+
+              // Lógica para mostrar/ocultar el botón Scroll to Top
+              if (window.scrollY > 300) { 
+                  scrollToTopBtn.classList.add('show');
+                  scrollToTopBtn.style.display = 'block';
+              } else {
+                  scrollToTopBtn.classList.remove('show');
+                  setTimeout(() => {
+                      if (!scrollToTopBtn.classList.contains('show')) {
+                          scrollToTopBtn.style.display = 'none';
+                      }
+                  }, 300); 
+              }
+          }
+          window.addEventListener('scroll', handleScroll);
+          handleScroll();
+      }
+      
+      // Desplazamiento suave al inicio
+      if (scrollToTopBtn) {
+          scrollToTopBtn.addEventListener('click', function() {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth' 
+              });
+          });
+      }
+  });
+</script>
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Ir al inicio de la página">
+    &uarr;
+</button>
+</body>
+</html>

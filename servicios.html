@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — ConectaIA</title>
+  <link rel="stylesheet" href="styles.css" /> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  </head>
+
+
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  
+  <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav id="mobile-menu" class="mobile-menu">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html" class="active">SERVICIOS</a></li>
+      <li><a href="noticias.html">NOTICIAS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <div class="sticky-header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo-small" />
+      </div>
+
+      <nav class="sticky-nav">
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="servicios.html" class="active">SERVICIOS</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <header class="page-header">
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="logo" />
+        </div>
+        
+        <nav class="main-nav">
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="servicios.html" class="active">SERVICIOS</a>
+            <a href="noticias.html">NOTICIAS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+      
+      <h1>Nuestros Servicios de Formación en IA</h1>
+      <p>
+        Ofrecemos formatos flexibles adaptados a tus necesidades: desde charlas rápidas hasta consultorías personalizadas.
+      </p>
+    </div>
+  </header>
+
+  <section class="benefits">
+    <div class="container">
+      <h2>Descubre el camino perfecto para dominar la IA</h2>
+      
+      <div class="benefit-cards">
+        <div class="card">
+          <h3>🖥️ Charlas y Cursos Online</h3>
+          <p>Sesiones de 2 horas en vivo para aprender herramientas específicas (ChatGPT, Midjourney, automatización). Ideales para dominar una habilidad en poco tiempo.</p>
+          <a href="#calendario" class="btn btn-primary" style="margin-top: 15px;">Ver Agenda</a>
+        </div>
+        <div class="card">
+          <h3>💼 Consultoría Empresarial</h3>
+          <p>Diagnóstico e implementación de soluciones de IA a medida para equipos y empresas. Mejora la productividad y reduce costos con flujos de trabajo inteligentes.</p>
+          <a href="#contacto" class="btn btn-secondary" style="margin-top: 15px;">Solicitar Presupuesto</a>
+        </div>
+        <div class="card">
+          <h3>🧑‍💻 Formación Personalizada</h3>
+          <p>Clases privadas o tutorías 1 a 1 centradas en tus objetivos profesionales. Te ayudamos a integrar la IA en tu nicho de mercado específico.</p>
+          <a href="#contacto" class="btn btn-secondary" style="margin-top: 15px;">Más Información</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="calendario" class="calendar">
+    <div class="container">
+      <h2>¿Listo para dar el primer paso?</h2>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 20px auto;">
+        Agenda una de nuestras próximas charlas o cuéntanos qué necesitas para tu empresa.
+      </p>
+      <a href="#agenda" class="btn btn-primary open-schedule-btn">Contáctanos ahora</a>
+    </div>
+</section>
+
+<div id="schedule-modal" class="modal-overlay">
+    <div class="modal-content schedule-content">
+        <button class="close-modal-btn">&times;</button>
+        
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="modal-logo" />
+
+        <h2>Agenda tu Próxima Sesión</h2>
+        <p>Selecciona una fecha y hora disponible para tu consultoría o curso.</p>
+        
+        <div class="schedule-container">
+           <!--  <div class="calendar-placeholder">
+    
+                <p>Fecha seleccionada: **28 de Noviembre, 10:00 AM**</p>
+            </div> -->
+            
+            <div class="calendar-selection">
+                <h3>Selecciona Fecha y Hora</h3>
+                <input type="text" id="flatpickr-calendar" placeholder="Haz clic para seleccionar..." required>
+                <p id="selected-datetime">Fecha y hora seleccionada: Ninguna</p>
+            </div>
+
+            <form class="booking-form">
+                <h3>Datos de Reserva</h3>
+                <input type="text" placeholder="Nombre completo" required />
+                <input type="tel" placeholder="Teléfono" required />
+                <input type="email" placeholder="Correo electrónico" required />
+                
+                <button type="submit" class="btn btn-primary btn-cta-pay">PAGAR $12.000 CLP</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+  <footer id="contacto" class="footer">
+    <div class="container">
+        <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+        <a href="#" class="btn btn-primary open-modal-btn">Abrir Formulario de Contacto</a> 
+
+        <p class="footer-copy">
+            ConectaIA © 2026 — Todos los derechos reservados  
+            📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+        </p>
+    </div>
+</footer>
+
+ <!--  <footer id="contacto" class="footer">
+    <div class="container">
+      <h2>Conecta con nosotros</h2>
+      <p>¿Tienes dudas o quieres una asesoría personalizada? Escríbenos y te ayudaremos a elegir la mejor charla para ti.</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+
+      <p class="footer-copy">
+        ConectaIA © 2025 — Todos los derechos reservados  
+        📧 contacto@conectaia.cl | 🌐 www.conectaia.cl
+      </p>
+    </div>
+  </footer> -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal-btn">&times;</button>
+        
+        <img src="logo-conectaia.svg" alt="Logo ConectaIA" class="modal-logo" />
+
+        <h2>Conecta con nosotros</h2>
+        <p>Déjanos tu mensaje y te responderemos a la brevedad.</p>
+        
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // -----------------------------------------------------------
+        // 1. ELEMENTOS BASE DE NAVEGACIÓN Y SCROLL
+        // -----------------------------------------------------------
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const stickyHeader = document.querySelector('.sticky-header'); 
+        const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn'); 
+        const breakpoint = 768; 
+        
+        // -----------------------------------------------------------
+        // 2. ELEMENTOS DE MODALES
+        // -----------------------------------------------------------
+        
+        // Modal de Contacto (Fullscreen)
+        const contactModal = document.getElementById('contact-modal');
+        const openContactButtons = document.querySelectorAll('a[href="#contacto"], .open-modal-btn'); 
+        const closeContactBtn = contactModal ? contactModal.querySelector('.close-modal-btn') : null;
+
+        // Modal de Agenda (Estructura de 800px)
+        const scheduleModal = document.getElementById('schedule-modal');
+        const openScheduleBtn = document.querySelector('.open-schedule-btn'); 
+        const closeScheduleBtn = scheduleModal ? scheduleModal.querySelector('.close-modal-btn') : null;
+        
+        // -----------------------------------------------------------
+        // 3. FUNCIONES DE MODALES
+        // -----------------------------------------------------------
+        
+        // Función general para abrir un modal
+        function openModal(modal, e) {
+            if (e) e.preventDefault();
+            modal.classList.add('visible');
+        }
+
+        // Función general para cerrar un modal
+        function closeModal(modal) {
+            modal.classList.remove('visible');
+        }
+        
+        // Asignar eventos de apertura y cierre
+        if (contactModal) {
+            // Abrir Modal de Contacto
+            openContactButtons.forEach(button => {
+                button.addEventListener('click', (e) => openModal(contactModal, e));
+            });
+            // Cerrar Modal de Contacto
+            if (closeContactBtn) closeContactBtn.addEventListener('click', () => closeModal(contactModal));
+        }
+
+        if (scheduleModal) {
+            // Abrir Modal de Agenda
+            if (openScheduleBtn) {
+                openScheduleBtn.addEventListener('click', (e) => openModal(scheduleModal, e));
+            }
+            // Cerrar Modal de Agenda
+            if (closeScheduleBtn) closeScheduleBtn.addEventListener('click', () => closeModal(scheduleModal));
+        }
+
+        // Lógica para cerrar modales al hacer clic en el overlay
+        [contactModal, scheduleModal].forEach(modal => {
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('modal-overlay')) {
+                        closeModal(modal);
+                    }
+                });
+            }
+        });
+
+        // Lógica para cerrar modales con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (contactModal && contactModal.classList.contains('visible')) {
+                    closeModal(contactModal);
+                } else if (scheduleModal && scheduleModal.classList.contains('visible')) {
+                    closeModal(scheduleModal);
+                }
+            }
+        });
+
+        // -----------------------------------------------------------
+        // 4. LÓGICA DE NAVEGACIÓN Y SCROLL (EXISTENTE)
+        // -----------------------------------------------------------
+        
+        // Funciones de Menú
+        function toggleMenu() {
+            const isExpanded = mobileMenu.classList.contains('open');
+            mobileMenu.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu.classList.contains('open')) {
+                    toggleMenu();
+                }
+            });
+        });
+        
+        window.addEventListener('resize', () => {
+             if (window.innerWidth > breakpoint && mobileMenu.classList.contains('open')) {
+                 mobileMenu.classList.remove('open');
+                 menuToggle.setAttribute('aria-expanded', 'false');
+             }
+        });
+        
+        // Lógica del Sticky Header y Scroll to Top
+        if (stickyHeader && heroSection) {
+            const stickyOffset = heroSection.offsetHeight * 0.5;
+
+            function handleScroll() {
+                // Sticky Header
+                if (window.scrollY > stickyOffset) {
+                    stickyHeader.classList.add('sticky');
+                } else {
+                    stickyHeader.classList.remove('sticky');
+                }
+
+                // Scroll to Top Button
+                if (window.scrollY > 300) { 
+                    scrollToTopBtn.classList.add('show');
+                    scrollToTopBtn.style.display = 'flex';
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                    setTimeout(() => {
+                        if (!scrollToTopBtn.classList.contains('show')) {
+                            scrollToTopBtn.style.display = 'none';
+                        }
+                    }, 300); 
+                }
+            }
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+        }
+        
+        // Desplazamiento suave al inicio
+        if (scrollToTopBtn) {
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
+                });
+            });
+        }
+        
+        // -----------------------------------------------------------
+        // 5. INICIALIZACIÓN DEL CALENDARIO FLATPCIKR (SÓLO EN servicios.html)
+        // -----------------------------------------------------------
+        const datetimeOutput = document.getElementById('selected-datetime');
+
+        if (document.getElementById('flatpickr-calendar')) {
+            flatpickr("#flatpickr-calendar", {
+                enableTime: true,
+                dateFormat: "F j, Y h:i K",
+                minuteIncrement: 30,
+                minDate: "today",
+                defaultHour: 9,
+                defaultMinute: 0,
+                onChange: function(selectedDates, dateStr, instance) {
+                    if (dateStr) {
+                        datetimeOutput.textContent = `Fecha y hora seleccionada: ${dateStr}`;
+                    } else {
+                        datetimeOutput.textContent = "Fecha y hora seleccionada: Ninguna";
+                    }
+                },
+            });
+        }
+    });
+</script>
+
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Ir al inicio de la página">
+    &uarr;
+</button>
+
+</body>
+</html>
